@@ -1,0 +1,17 @@
+# Render Python Backend Service Configuration
+
+# This file tells Render how to deploy your backend service.
+# Docs: https://render.com/docs/deploy-python
+
+services:
+  - type: web
+    name: whatsappanalyzer-backend
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
+    envVars:
+      - key: PORT
+        value: 10000
+    autoDeploy: true
+    rootDir: backend

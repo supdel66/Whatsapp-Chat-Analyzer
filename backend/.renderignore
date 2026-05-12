@@ -1,0 +1,18 @@
+# .renderignore
+# Ignore files and folders that should not be uploaded to Render
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.env
+.DS_Store
+.idea/
+.vscode/
+
+# Ignore frontend and other non-backend folders
+frontend/
+README.md
+chat.txt
+updated_chat.txt
