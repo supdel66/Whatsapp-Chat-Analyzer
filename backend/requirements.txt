@@ -1,6 +1,5 @@
 # requirements.txt for Render deployment
 fastapi
-uvicorn[standard]
 gunicorn
 pandas
 # Add any other dependencies your backend needs below
