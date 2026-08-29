@@ -3,3 +3,4 @@ fastapi
 gunicorn
 pandas
 # Add any other dependencies your backend needs below
+python-multipart
